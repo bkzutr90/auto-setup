@@ -1,0 +1,16 @@
+# Ganti nama app (harus unik di seluruh Fly.io)
+app = "nama-bot-kamu"
+primary_region = "sin"   # Singapura, paling dekat ke Jakarta
+
+[build]
+
+[env]
+  DB_PATH = "/data/bot.db"
+
+[[mounts]]
+  source = "botdata"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
