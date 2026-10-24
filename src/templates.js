@@ -65,6 +65,59 @@ const templates = {
       },
     ],
   },
+  gaming: {
+    label: 'Gaming', emoji: '🎮',
+    categories: [
+      {
+        name: '「✦ 📄｜INFORMATION ✦」', readonly: true,
+        channels: [
+          { t: 'text', n: '📢｜announcements', key: 'announce_channel' },
+          { t: 'text', n: '📌｜rules' },
+          { t: 'text', n: '🎉｜welcome', key: 'welcome_channel' },
+          { t: 'text', n: '👋｜goodbye', key: 'goodbye_channel' },
+          { t: 'text', n: '🎭｜roles' },
+        ],
+      },
+      {
+        name: '「✦ 💬｜GENERAL ✦」',
+        channels: [
+          { t: 'text', n: '💬｜general' },
+          { t: 'text', n: '😂｜memes' },
+          { t: 'text', n: '🤖｜bot-commands' },
+          { t: 'voice', n: '🔊｜Lounge' },
+        ],
+      },
+      {
+        name: '「✦ 🎮｜GAMING ✦」',
+        channels: [
+          { t: 'text', n: '🎮｜gaming-chat' },
+          { t: 'text', n: '🔎｜looking-for-group' },
+          { t: 'text', n: '🎬｜clips-highlights' },
+          { t: 'text', n: '📰｜game-news' },
+          { t: 'text', n: '🏆｜tournaments' },
+          { t: 'voice', n: '🎧｜Squad 1' },
+          { t: 'voice', n: '🎧｜Squad 2' },
+          { t: 'voice', n: '🎧｜Squad 3' },
+          { t: 'voice', n: '🏆｜Tournament Room' },
+        ],
+      },
+      {
+        name: '「✦ 🎵｜MUSIC ✦」',
+        channels: [
+          { t: 'text', n: '🎵｜music-request' },
+          { t: 'voice', n: '🎶｜Music 1' },
+        ],
+      },
+      {
+        name: '「✦ 🆘｜SUPPORT ✦」',
+        channels: [
+          { t: 'text', n: '🆘｜help' },
+          { t: 'text', n: '🎫｜tickets', key: 'ticket_channel' },
+          { t: 'voice', n: '🔊｜Support Voice' },
+        ],
+      },
+    ],
+  },
 };
 
 // Selalu dibuat otomatis di setiap template

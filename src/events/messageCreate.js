@@ -5,7 +5,7 @@ const { need } = require('../commands/level');
 
 const cooldown = new Map();
 
-const MODEL = () => process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL = () => process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
 async function askAI(channel, botId) {
   const fetched = await channel.messages.fetch({ limit: 12 });
