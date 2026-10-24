@@ -1,16 +1,28 @@
-# Ganti nama app (harus unik di seluruh Fly.io)
-app = "nama-bot-kamu"
-primary_region = "sin"   # Singapura, paling dekat ke Jakarta
+# fly.toml app configuration file generated for auto-setup on 2026-10-24T23:40:24Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'auto-setup'
+primary_region = 'sin'
 
 [build]
 
 [env]
-  DB_PATH = "/data/bot.db"
+  DB_PATH = '/data/bot.db'
 
 [[mounts]]
-  source = "botdata"
-  destination = "/data"
+  source = 'botdata'
+  destination = '/data'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
 
 [[vm]]
-  size = "shared-cpu-1x"
-  memory = "512mb"
+  size = 'shared-cpu-1x'
+  memory = '512mb'
